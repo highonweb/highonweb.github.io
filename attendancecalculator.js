@@ -6,7 +6,7 @@ window.onload=function() {
 var queryString = decodeURIComponent(window.location.search);
 queryString = queryString.substring(1);
 var queries = queryString.split("&");
-document.getElementById("welc").innerHTML = "Hi! "+queries[0].slice(10)+" "+queries[1].slice(9);
+document.getElementById("welc").innerHTML = "Hi! "+queries[0].slice(10).replace("+"," ")+" "+queries[1].slice(9).replace("+"," ");
 
 var s2p=0;
 var s2t=0;
